@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnSimple"
+                    style="@style/btnItem"
+                    android:text="Hello PhoneGap" />
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    style="@style/btnItem"
+                    android:text="Camera" />
+            </LinearLayout>
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnBarcode"
+                    style="@style/btnItem"
+                    android:text="Barcode" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle" >
+
+    <LinearLayout style="@style/lyHorizontalStyle" >
+
+        <TextView
+            android:id="@+id/tvIndex"
+            style="@style/btnItem"
+            android:text="Index" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            style="@style/btnItem"
+            android:text="Account" />
+
+        <TextView
+            android:id="@+id/tvCmdId"
+            style="@style/btnItem"
+            android:text="CmdId" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/lyHorizontalStyle" >
+
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/btnItem"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            style="@style/btnItem"
+            android:text="height" />
+
+        <TextView
+            android:id="@+id/tvNumericalOder"
+            style="@style/btnItem"
+            android:text="NOrder" />
+
+        <TextView
+            android:id="@+id/tvSex"
+            style="@style/btnItem"
+            android:text="sex" />
+    </LinearLayout>
+
+</LinearLayout>

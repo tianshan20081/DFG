@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnWifiInfo"
+                    style="@style/btnItem"
+                    android:text="@string/str_wifi_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

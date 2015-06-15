@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <TextView
+                    style="@style/btnItem"
+                    android:text="@string/str_name" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/btnItem" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <TextView
+                    style="@style/btnItem"
+                    android:text="@string/str_steps" />
+
+                <TextView
+                    android:id="@+id/tvSteps"
+                    style="@style/btnItem" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <TextView
+                    style="@style/btnItem"
+                    android:text="@string/str_battery" />
+
+                <TextView
+                    android:id="@+id/tvBattery"
+                    style="@style/btnItem" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

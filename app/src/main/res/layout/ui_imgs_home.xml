@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnCircleImg"
+                    style="@style/btnItem"
+                    android:text="圆形图片" />
+
+                <Button
+                    android:id="@+id/btnShapeImg"
+                    style="@style/btnItem"
+                    android:text="不规则形状照片" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnGetPicFromMediaStore"
+                    style="@style/btnItem"
+                    android:text="从图库选择图片" />
+
+                <Button
+                    android:id="@+id/btnGetPicsFromMediaStore"
+                    style="@style/btnItem"
+                    android:text="从图库选择多张图片" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnPicWall"
+                    style="@style/btnItem"
+                    android:text="照片墙" />
+
+                <Button
+                    android:id="@+id/btnTakeIcon"
+                    style="@style/btnItem"
+                    android:text="拍一张头像" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnPicIcon"
+                    style="@style/btnItem"
+                    android:text="@string/picIcon" />
+
+                <Button
+                    android:id="@+id/btnImgCrop"
+                    style="@style/btnItem"
+                    android:text="@string/picCrop" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnImageAutoGroup"
+                    style="@style/btnItem"
+                    android:text="@string/images_auto_group" />
+
+                <Button
+                    android:id="@+id/btnImagePlay"
+                    style="@style/btnItem"
+                    android:text="ImagePlay" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnGraffiti"
+                    style="@style/btnItem"
+                    android:text="画板" />
+
+                <Button
+                    android:id="@+id/btnMitoPic"
+                    style="@style/btnItem"
+                    android:text="美图" />
+            </LinearLayout>
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <Button
+                    android:id="@+id/btnMesh"
+                    style="@style/btnItem"
+                    android:text="正弦图" />
+
+               
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

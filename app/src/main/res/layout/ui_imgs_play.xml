@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyBase"
+    style="@style/lyVerticalStyle" >
+
+    <LinearLayout style="@style/lyHorizontalStyle" >
+
+        <Button
+            android:id="@+id/btnLeft"
+            style="@style/btnItem"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/btnRight"
+            style="@style/btnItem"
+            android:text="Left" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/lyHorizontalStyle" >
+
+        <Button
+            android:id="@+id/btnTop"
+            style="@style/btnItem"
+            android:text="Top" />
+
+        <Button
+            android:id="@+id/btnBottom"
+            style="@style/btnItem"
+            android:text="Bottom" />
+    </LinearLayout>
+
+</LinearLayout>

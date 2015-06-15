@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="这是一个用来对抗 反编译工具 dex2jar 因为 dex2jar 在解析dex 文件的时候遇到了不支持的 Dalvik 指令 RSUB_INT_LIT8  " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" RSUB_INT_LIT8 指令的作用是 逆减法操作(即第二个操作数减去第一个操作数). " />
+
+    <TextView
+        android:id="@+id/tvAntidex2Jareg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="// 将此函数添加到要防止被反编译的类中即可！
+// 注意：1.for 循环不可用 do{}while(false) 的形式来代替，否则无效！
+// 　　　2.a[0 - i] = 0; 数组下标必须为数值计算(0 - i)的形式，否则无效！
+private static void // static 最好保留以防被优化掉此函数
+AntiDecompile()
+{
+    char a[] = { 0 };
+    for( int i = 0; 
+             i &lt; 1; 
+             i++ )
+    {
+         a[0 - i] = 0;
+    }
+}" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" 既然 dex2jar 遇到  RSUB_INT_LIT8 指令会发生异常,因此我们在代码中 只需要有此操作,就可防止 dex2jar 的反编译" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" 不過網上有消息稱 在 新版本的 dex2jar 中修復了該問題,因此,此方法不是萬能方法." />
+
+</LinearLayout>

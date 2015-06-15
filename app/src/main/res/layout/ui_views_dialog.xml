@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <com.aoeng.degu.views.progress.DonutProgress
+                    android:id="@+id/dp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    custom:donut_finished_stroke_width="10dp"
+                    custom:donut_progress="20"
+                    custom:donut_unfinished_color="#00ff00" />
+
+                <com.aoeng.degu.views.progress.DonutProgress
+                    android:id="@+id/dp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    custom:donut_finished_stroke_width="10dp"
+                    custom:donut_progress="20"
+                    custom:donut_unfinished_color="#ff0000" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <com.aoeng.degu.views.progress.DonutProgress
+                    android:id="@+id/dp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    custom:donut_progress="30" />
+
+                <com.aoeng.degu.views.progress.DonutProgress
+                    android:id="@+id/dp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    custom:donut_background_color="#ffff00"
+                    custom:donut_finished_color="#0000ff"
+                    custom:donut_finished_stroke_width="10dp"
+                    custom:donut_prefix_text="A"
+                    custom:donut_progress="20"
+                    custom:donut_suffix_text="％ "
+                    custom:donut_text_color="#000000"
+                    custom:donut_text_size="16sp"
+                    custom:donut_unfinished_color="#ff0000"
+                    custom:donut_unfinished_stroke_width="10dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <com.aoeng.degu.views.progress.CircleProgress
+                    android:id="@+id/cp1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp"
+                    custom:circle_progress="10" />
+
+                <com.aoeng.degu.views.progress.CircleProgress
+                    android:id="@+id/cp2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp"
+                    custom:circle_finished_color="#ff0000"
+                    custom:circle_progress="25"
+                    custom:circle_suffix_text="%"
+                    custom:circle_text_color="#ffffff"
+                    custom:circle_text_size="16sp"
+                    custom:circle_unfinished_color="#00ff00" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <com.aoeng.degu.views.progress.ArcProgress
+                    android:id="@+id/ap1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#214193"
+                    custom:arc_bottom_text="MEMORY"
+                    custom:arc_progress="10" />
+
+                <com.aoeng.degu.views.progress.ArcProgress
+                    android:id="@+id/ap2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#214193"
+                    custom:arc_bottom_text="STORAGE"
+                    custom:arc_finished_color="#ffffff"
+                    custom:arc_progress="30"
+                    custom:arc_suffix_text="％"
+                    custom:arc_text_color="#ffffff"
+                    custom:arc_unfinished_color="#ff0000" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle" >
+
+                <com.aoeng.degu.views.progress.ArcProgress
+                    android:id="@+id/ap3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    custom:arc_bottom_text="RAM"
+                    custom:arc_bottom_text_size="35sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

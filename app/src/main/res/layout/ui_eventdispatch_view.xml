@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aoeng.degu.views.EventDispatchView
+        xmlns:aoeng="http://schema.android.com/apk/res/com/aoeng/degu"
+        android:id="@+id/edView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnClick1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click one" />
+
+        <Button
+            android:id="@+id/btnClick2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Click two" />
+    </com.aoeng.degu.views.EventDispatchView>
+
+</LinearLayout>

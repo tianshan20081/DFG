@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/lvNormal"
+                    style="@style/btnItem"
+                    android:text="NormalListView" />
+
+                <Button
+                    android:id="@+id/lvPages"
+                    style="@style/btnItem"
+                    android:text="PagesListView" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/btnLv01"
+                    style="@style/btnItem"
+                    android:text="下拉刷新" />
+
+                <Button
+                    android:id="@+id/btnLv02"
+                    style="@style/btnItem"
+                    android:text="下拉刷新，上拉加载更多" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/btnExpandLv"
+                    style="@style/btnItem"
+                    android:text="ExpandLv" />
+
+                <Button
+                    android:id="@+id/btnMovingDel"
+                    style="@style/btnItem"
+                    android:text="左右滑动删除条目" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/btnUpDownLv"
+                    style="@style/btnItem"
+                    android:text="下拉刷新,上拉更多" />
+
+                <Button
+                    android:id="@+id/btnLvMargin"
+                    style="@style/btnItem"
+                    android:text="滑動改變 margin" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/btnScrollDel"
+                    style="@style/btnItem"
+                    android:text="滑动删除" />
+
+                <Button
+                    android:id="@+id/btnSwipeDel"
+                    style="@style/btnItem"
+                    android:text="滑动删除Swipe" />
+            </LinearLayout>
+            <LinearLayout style="@style/lyItem" >
+
+                <Button
+                    android:id="@+id/btnSwipeSingleDel"
+                    style="@style/btnItem"
+                    android:text="滑动删除SwipeSingle" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

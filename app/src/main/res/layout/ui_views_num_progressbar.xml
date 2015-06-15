@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    style="@style/lyVerticalStyle" >
+
+    <ScrollView style="@style/scrollViewStyle" >
+
+        <LinearLayout style="@style/lyVerticalStyle" >
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb1"
+                style="@style/NumberProgressBar_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                custom:progress="0" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb2"
+                style="@style/NumberProgressBar_Passing_Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                custom:progress="20" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb3"
+                style="@style/NumberProgressBar_Relax_Blue"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="30" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb4"
+                style="@style/NumberProgressBar_Grace_Yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="40" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb5"
+                style="@style/NumberProgressBar_Warning_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="50" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb6"
+                style="@style/NumberProgressBar_Funny_Orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="60" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb7"
+                style="@style/NumberProgressBar_Beauty_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="70" />
+
+            <com.aoeng.degu.views.progress.NumberProgressBar
+                android:id="@+id/numPb8"
+                style="@style/NumberProgressBar_Twinkle_Night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress="80" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

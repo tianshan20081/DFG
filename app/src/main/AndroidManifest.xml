@@ -3,12 +3,15 @@
     package="com.gooker.dfg" >
 
     <application
+        android:name=".application.DGApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <uses-library android:name="android.test.runner" />
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.HomeUI"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +19,388 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.Chapter1UI" />
+        <activity android:name=".ui.FrameUI" />
+        <activity android:name=".ui.MergeView" />
+        <activity android:name=".ui.WidgetUI" />
+        <activity android:name=".ui.DataSaveUI" />
+        <activity android:name=".ui.PreferenceUI" />
+        <activity android:name=".ui.FileSaveDataUI" />
+        <activity android:name=".ui.FileSaveDataSDUI" />
+        <activity android:name=".ui.FileCompressionUI" />
+        <activity android:name=".ui.SqlLiteDBUI" />
+        <activity android:name=".ui.uis.UIsUI" />
+        <activity android:name=".ui.LocationsUI" />
+        <activity android:name=".ui.uis.ActionUI" >
+            <intent-filter>
+                <action android:name=".ui.uis.ACTION_UIS" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.uis.Action2UI" >
+            <intent-filter>
+                <action android:name=".ui.uis.ACTION_UIS" />
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <data android:mimeType="audio/*" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.uis.GroupMainUI" />
+        <activity android:name=".ui.uis.Group1UI" />
+        <activity android:name=".ui.uis.Group2UI" />
+        <activity android:name=".ui.uis.Group3UI" />
+        <activity android:name=".ui.uis.FileInfosUI" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".receiver.ShortMessageReceiver"
+            android:enabled="true"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".receiver.InCallReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.PHONE_STATE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".receiver.OutCallReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTCOMING_CALL" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".receiver.StartUpReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".receiver.ReceiverUI" />
+        <activity android:name=".ui.cp.ContentProviderUI" />
+
+        <provider
+            android:name=".contentprovider.RegionContentProvider"
+            android:authorities=".permission.regionContentprovider"
+            android:permission=".permission.regionContentprovider.REGION" >
+        </provider>
+        <provider
+            android:name=".ui.imgs.InternalStorageContentProvider"
+            android:authorities=".ui.imgs"
+            android:exported="true" />
+
+        <service
+            android:name=".services.BaseServices"
+            android:enabled="true" />
+        <service
+            android:name=".services.BindServices"
+            android:enabled="true" />
+        <service
+            android:name=".services.TIntentService"
+            android:enabled="true" />
+        <service
+            android:name=".services.QiNiuFileUploadService"
+            android:enabled="true" />
+        <service
+            android:name=".services.PersonService"
+            android:enabled="true" />
+        <service
+            android:name=".services.UploadAppsInfoService"
+            android:enabled="true" />
+
+        <activity android:name=".ui.services.ServiceUI" />
+
+        <service android:name=".aidl.AidlService" >
+            <intent-filter>
+                <action android:name=".aidl.IMyService" />
+            </intent-filter>
+        </service>
+        <service android:name=".aidl.ProductService" >
+            <intent-filter>
+                <action android:name=".aidl.ProductService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ui.wv.WebViewUI" />
+        <activity android:name=".ui.wv.SimpleWebViewUI" />
+        <activity android:name=".ui.wv.PbWebViewUI" />
+        <!-- js Call java -->
+        <activity android:name=".ui.wv.JsCallJavaUI" />
+        <activity android:name=".ui.nt.NetWorkUI" />
+        <activity android:name=".ui.jni.JNIHomeUI" />
+        <activity android:name=".ui.cd.CoordinatesUI" />
+        <activity android:name=".ui.CustomerViewUI" />
+        <activity android:name=".ui.cv.BidirSlidingUI" />
+        <activity android:name=".ui.cv.PhotoWallUI" />
+        <activity android:name=".ui.cv.ContactsUI" />
+        <activity android:name=".ui.cv.Contacts2UI" />
+        <activity android:name=".ui.cv.PhotoWall2CacheUI" />
+        <activity android:name=".ui.cv.PhotoWaterFallUI" />
+        <activity android:name=".ui.cv.PhotoSmall2BigUI" />
+        <activity android:name=".ui.cv.TabsByGroupUI" />
+        <activity android:name=".ui.cv.OneView" />
+        <activity android:name=".ui.cv.TwoView" />
+        <activity android:name=".ui.cv.ThreeView" />
+        <activity android:name=".ui.cv.FourView" />
+        <activity android:name=".ui.lvs.ListViewsUI" />
+        <activity android:name=".ui.lvs.NormalListViewUI" />
+        <activity android:name=".ui.lvs.PagesListViewUI" />
+        <activity android:name=".ui.lvs.LvScrollMarginUI" />
+        <!-- PinnedHeaderExpandableListView -->
+        <activity android:name=".ui.lvs.ExpandLvUI" />
+        <!-- 下拉刷新 -->
+        <activity android:name=".ui.lvs.ReflashListUI" />
+        <activity android:name=".ui.lvs.RefreshScrollUI" />
+        <activity android:name=".ui.lvs.PullToRefreshUI" />
+        <!-- 左右滑动删除 item -->
+        <activity android:name=".ui.lvs.MovingDelItemLvUI" />
+        <!-- 左右滑动删除 item -->
+        <activity android:name=".ui.lvs.LvScrollDelUI" />
+        <!-- 左右滑动删除 item -->
+        <activity android:name=".ui.lvs.LvSwipeDelUI" />
+        <!-- 左右滑动删除 item -->
+        <activity android:name=".ui.lvs.LvSwipeSingleDelUI" />
+        <!-- 下拉刷新,上拉加载更多 -->
+        <activity android:name=".ui.lvs.UpDownLvUI" />
+        <activity android:name=".ui.logins.LoginUIs" />
+        <activity android:name=".ui.logins.LoginQQSplashUI" />
+        <activity android:name=".ui.logins.LoginQQUI" />
+        <activity android:name=".ui.logins.MainQQActivity" />
+        <activity
+            android:name=".ui.cv.BigImageShowerUI"
+            android:theme="@style/ImageScale" />
+        <!-- 圖片展示 -->
+        <activity android:name=".ui.imgs.ImageViewsHomeUI" />
+        <!-- 圆形图片 -->
+        <activity android:name=".ui.imgs.CircleImgUI" />
+        <!-- 多种图形展示界面 -->
+        <activity android:name=".ui.imgs.CustomShapeImgUI" />
+        <activity android:name=".ui.imgs.PictureFromMediaStoreUI" />
+        <activity android:name=".ui.imgs.PicturesFromMediaStoreUI" />
+        <activity android:name=".ui.imgs.PictureWallUI" />
+        <activity android:name=".ui.imgs.PicIconUI" />
+        <activity android:name=".ui.imgs.ImageClipUI" />
+        <activity android:name=".ui.imgs.PicCropUI" />
+        <activity android:name=".ui.imgs.CropImage" />
+        <activity android:name=".ui.imgs.ImageAutoGroupUI" />
+        <activity android:name=".ui.imgs.GraffitiUI" />
+        <activity android:name=".ui.imgs.MiToUI" />
+        <activity android:name=".ui.imgs.MeshUI" />
+        <!-- 拍摄一个头像 -->
+        <activity android:name=".ui.imgs.TakeIconUI" />
+        <activity android:name=".ui.imgs.XutilsBitMapUtilsUI" />
+        <activity android:name=".ui.imgs.ImagePlayerUI" />
+        <!-- 應用程序管理界面 -->
+        <activity android:name=".ui.apps.AppManagerUI" />
+        <!-- 所有應用程序 -->
+        <activity android:name=".ui.apps.AllAppUI" />
+        <activity android:name=".ui.apps.SysAppsUI" />
+        <!-- 获取应用程序大小 -->
+        <activity android:name=".ui.apps.AppSizeUI" />
+        <!-- 反编译 -->
+        <activity android:name=".ui.security.SecurityUI" />
+        <activity android:name=".ui.security.Antidex2JarUI" />
+        <!-- 代码混淆 -->
+        <activity android:name=".ui.security.ProguardUI" />
+        <activity android:name=".ui.security.CheckEmuUI" />
+        <activity android:name=".ui.security.AntiDebugUI" />
+        <activity android:name=".ui.security.CheckSignatureUI" />
+        <activity android:name=".ui.security.CheckCrcUI" />
+        <activity android:name=".ui.games.GameHomeUI" />
+        <activity android:name=".ui.games.SuDoKuUI" />
+        <activity android:name=".ui.games.CompassUI" />
+        <activity android:name=".ui.media.MediaHomeUI" />
+        <activity android:name=".ui.media.VideoViewUI" />
+        <activity android:name=".ui.media.SurfaceViewUI" />
+        <activity android:name=".ui.media.AudioPlayUI" />
+        <activity android:name=".ui.media.SoundPoolUI" />
+        <activity android:name=".ui.media.RawAudioUI" />
+        <activity android:name=".ui.media.IntentCameraUI" />
+        <activity android:name=".ui.media.CameraUI" />
+        <activity android:name=".ui.media.IntentVideoCameraUI" />
+        <activity android:name=".ui.media.MediaRecorderedVoiceUI" />
+        <activity android:name=".ui.internet.InternetHomeUI" />
+        <activity android:name=".ui.internet.DomParserUI" />
+        <activity android:name=".ui.internet.download.NormalDownloadUI" />
+        <activity android:name=".ui.internet.download.MulityDownloadUI" />
+        <activity android:name=".ui.internet.QnBreakPointUploadUI" />
+        <activity android:name=".ui.internet.QnSingleUploadUI" />
+        <activity android:name=".ui.views.ViewsUI" />
+        <activity android:name=".ui.views.TableLayoutUI" />
+        <activity android:name=".ui.views.ProgressUI" />
+        <activity android:name=".ui.views.NumProgressBarUI" />
+        <activity android:name=".ui.encryption.EncHomeUI" />
+        <!-- 事件分发 -->
+        <activity android:name=".ui.eventdispatch.EventDispatchUI" />
+        <activity android:name=".ui.eventdispatch.SimpleEventDispatchUI" />
+        <activity android:name=".ui.eventdispatch.EventDispatchViewUI" />
+
+        <!-- Phonegap -->
+        <activity android:name=".ui.phonegap.PhoneGapHomeUI" />
+        <activity android:name=".ui.phonegap.SimplePhoneGapUI" />
+        <activity android:name=".ui.phonegap.PhoneGapCameraUI" />
+        <activity android:name=".ui.phonegap.PhoneGapBarcodeUI" />
+        <activity
+            android:name=".ui.mp.MpRequestInfoUI"
+            android:launchMode="singleTask" />
+
+        <!-- bluetooth -->
+        <activity android:name=".ui.bl.BlHomeUI" />
+        <activity android:name=".ui.bl.BleShiYunHomeUI" />
+        <activity android:name=".ui.bl.MiLeHomeUI" />
+        <activity android:name=".ui.bl.BleYcHomeUI" />
+        <activity android:name=".ui.bl.BleShiYunUserUI" />
+        <activity android:name=".ui.bl.BleSyUserUI" />
+        <activity android:name=".ui.handler.ThreadHandlerUI" />
+        <activity android:name=".ui.handler.ReferenceHandlerUI" />
+
+        <service
+            android:name="com.chronocloud.ryfibluetoothlibrary.service.BluetoothService"
+            android:enabled="true" />
+        <!-- shell Command -->
+        <activity android:name=".ui.shell.ShellHomeUI" />
+
+        <!-- Mobile Manager -->
+        <activity android:name=".ui.mm.MobileManagerHomeUI" />
+        <activity
+            android:name="com.phonegap.DroidGap"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+
+        <!-- PhoneGap -->
+        <activity android:name=".ui.chartengine.ChartEngineHomeUI" />
+        <activity android:name=".ui.chartengine.SimpleChartEngineUI" />
+
+        <receiver android:name=".ui.media.MediaControlReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.LogFileUploadServices"
+            android:enabled="true" />
+        <service
+            android:name=".services.MulityLogFileUploadServices"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="USER_PRIVATE_KEY"
+            android:value="thisisuserprivatekey" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- jpush start -->
+
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.gooker.dfg" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.gooker.dfg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.JpushReciver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.gooker.dfg" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d0b7a62a78cdeeeab6ddc8ad" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- jpush end -->
     </application>
 
 </manifest>
