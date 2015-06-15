@@ -8,7 +8,6 @@ import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 import cn.jpush.android.api.JPushInterface;
 
-import com.aoeng.degu.R;
 
 public class WidgetUI extends Activity {
 	private TextView tv02;

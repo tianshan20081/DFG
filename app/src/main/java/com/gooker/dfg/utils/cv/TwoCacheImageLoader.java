@@ -3,10 +3,15 @@
  */
 package com.gooker.dfg.utils.cv;
 
-import java.io.InputStream;
-import java.lang.ref.SoftReference;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.http.AndroidHttpClient;
+import android.os.AsyncTask;
+import android.os.Handler;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+
+import com.gooker.dfg.R;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -16,15 +21,11 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.http.AndroidHttpClient;
-import android.os.AsyncTask;
-import android.os.Handler;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import java.io.InputStream;
+import java.lang.ref.SoftReference;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
-import com.aoeng.degu.R;
 
 /**
  * @author [ShaoCheng Zhang] Sep 5, 2013:3:02:53 PM

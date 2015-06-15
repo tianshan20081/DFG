@@ -1,6 +1,5 @@
 package com.gooker.dfg.ui.handler;
 
-import java.lang.ref.WeakReference;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -8,9 +7,11 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.utils.common.LogUtils;
+import com.gooker.dfg.R;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.utils.common.LogUtils;
+
+import java.lang.ref.WeakReference;
 
 public class ReferenceHandlerUI extends BaseUI {
 	public static final int SEND_HELLO = 100;
@@ -23,7 +24,7 @@ public class ReferenceHandlerUI extends BaseUI {
 		switch (v.getId()) {
 		case R.id.btnSendInfo:
 			mHandler.obtainMessage(SEND_HELLO, "reference handler").sendToTarget();
-			LogUtils.e(com.aoeng.degu.ui.handler.ReferenceHandlerUI.class.getName() + "send message");
+			LogUtils.e(ReferenceHandlerUI.class.getName() + "send message");
 			break;
 		default:
 			break;
@@ -69,7 +70,7 @@ public class ReferenceHandlerUI extends BaseUI {
 				switch (msg.what) {
 				case SEND_HELLO:
 					String info = (String) msg.obj;
-					LogUtils.e(com.aoeng.degu.ui.handler.ReferenceHandlerUI.class.getName() + "------" + info);
+					LogUtils.e(ReferenceHandlerUI.class.getName() + "------" + info);
 					break;
 				default:
 					break;

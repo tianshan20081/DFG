@@ -1,7 +1,5 @@
 package com.gooker.dfg.listener;
 
-import java.io.File;
-
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaRecorder;
@@ -16,10 +14,10 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.listener.*;
-import com.aoeng.degu.listener.RepeatedClickHandler;
-import com.aoeng.degu.utils.common.StringUtils;
+import com.gooker.dfg.utils.common.StringUtils;
+
+import java.io.File;
+
 
 /**
  * 处理录音说话按钮的触摸事件的监听器
@@ -34,7 +32,7 @@ public class SpeakButtonTouchListener implements OnTouchListener {
 	private ImageView iv_voice_rcd;
 	private PopupWindow voiceRecordPopupWindow;
 	private ObtainDecibelThread thread;
-	private com.aoeng.degu.listener.RepeatedClickHandler repeatedClickHandler;
+	private RepeatedClickHandler repeatedClickHandler;
 	private static final int MIN_INTERVAL_TIME = 2000;// 2s
 	private static final int MAX_INTERVAL_TIME = 1000 * 60 * 5;// 5分钟
 	private static int[] res = { R.drawable.amp1, R.drawable.amp2, R.drawable.amp3, R.drawable.amp4, R.drawable.amp5, R.drawable.amp6, R.drawable.amp7 };

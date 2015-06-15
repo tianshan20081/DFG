@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.domain.Contact;
+import com.gooker.dfg.R;
+import com.gooker.dfg.domain.Contact;
 
 import java.util.List;
 

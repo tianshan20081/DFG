@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.utils.common.StringUtils;
-import com.aoeng.degu.utils.common.UIUtils;
+import com.gooker.dfg.utils.common.StringUtils;
+import com.gooker.dfg.utils.common.UIUtils;
 
 import java.util.ArrayList;
 import java.util.List;

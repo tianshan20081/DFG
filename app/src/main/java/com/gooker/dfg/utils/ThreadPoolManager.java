@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
  */
 public class ThreadPoolManager {
 	private ExecutorService service;
-	private static com.aoeng.degu.utils.ThreadPoolManager manager = new com.aoeng.degu.utils.ThreadPoolManager();
+	private static ThreadPoolManager manager = new ThreadPoolManager();
 
 	private ThreadPoolManager() {
 		int num = Runtime.getRuntime().availableProcessors();
@@ -22,7 +22,7 @@ public class ThreadPoolManager {
 	/**
 	 * @return
 	 */
-	public static com.aoeng.degu.utils.ThreadPoolManager getInstance() {
+	public static ThreadPoolManager getInstance() {
 		// TODO Auto-generated method stub
 		return manager;
 	}

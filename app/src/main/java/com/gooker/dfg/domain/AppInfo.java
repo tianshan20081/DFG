@@ -3,12 +3,10 @@
  */
 package com.gooker.dfg.domain;
 
-import java.io.Serializable;
-
-import com.alibaba.fastjson.JSON;
-
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+
+import java.io.Serializable;
 
 /**
  * May 19, 2014 10:10:08 AM

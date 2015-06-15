@@ -15,11 +15,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.application.DGApplication;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.ui.mp.MpRequestInfoUI;
-import com.aoeng.degu.utils.ThreadPoolManager;
+import com.gooker.dfg.application.DGApplication;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.ui.mp.MpRequestInfoUI;
+import com.gooker.dfg.utils.ThreadPoolManager;
+
 
 public class UIUtils {
 	public static Context getContext() {
@@ -140,7 +140,7 @@ public class UIUtils {
 		stackBuilder.addNextIntent(resultIntent);
 		PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 		mBuilder.setContentIntent(resultPendingIntent);
-		NotificationManager mNotificationManager = (NotificationManager) com.aoeng.degu.utils.common.UIUtils.getContext().getSystemService(Context.NOTIFICATION_SERVICE);
+		NotificationManager mNotificationManager = (NotificationManager) UIUtils.getContext().getSystemService(Context.NOTIFICATION_SERVICE);
 		// mId allows you to update the
 		// notification later on.
 		mBuilder.setDefaults(Notification.DEFAULT_LIGHTS);

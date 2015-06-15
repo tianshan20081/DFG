@@ -3,11 +3,18 @@
  */
 package com.gooker.dfg.utils.net;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.widget.Toast;
+
+import com.gooker.dfg.R;
+import com.gooker.dfg.domain.LogFileUploadResult;
+import com.gooker.dfg.services.DataCallback;
+import com.gooker.dfg.utils.FileUploadVO;
+import com.gooker.dfg.utils.RequestVO;
+import com.gooker.dfg.utils.common.Logger;
+import com.gooker.dfg.utils.common.UIUtils;
 
 import org.apache.http.Consts;
 import org.apache.http.Header;
@@ -25,20 +32,11 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.widget.Toast;
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map.Entry;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.domain.LogFileUploadResult;
-import com.aoeng.degu.services.DataCallback;
-import com.aoeng.degu.utils.FileUploadVO;
-import com.aoeng.degu.utils.RequestVO;
-import com.aoeng.degu.utils.common.Logger;
-import com.aoeng.degu.utils.common.UIUtils;
-import com.aoeng.degu.utils.net.*;
-import com.aoeng.degu.utils.net.HttpUtils;
 
 /**
  * Mar 23, 2014 11:57:37 AM

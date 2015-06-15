@@ -1,7 +1,5 @@
 package com.gooker.dfg.domain;
 
-import com.aoeng.degu.domain.*;
-import com.aoeng.degu.domain.LocationInfo;
 
 import java.io.Serializable;
 
@@ -13,7 +11,7 @@ public class BaiDuLocation implements Serializable {
 	private static final long serialVersionUID = 6826896517054539448L;
 
 	private int status;
-	private com.aoeng.degu.domain.LocationInfo result;
+	private LocationInfo result;
 
 	public int getStatus() {
 		return status;
@@ -23,7 +21,7 @@ public class BaiDuLocation implements Serializable {
 		this.status = status;
 	}
 
-	public com.aoeng.degu.domain.LocationInfo getResult() {
+	public LocationInfo getResult() {
 		return result;
 	}
 

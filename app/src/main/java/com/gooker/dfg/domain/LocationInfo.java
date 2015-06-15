@@ -1,7 +1,5 @@
 package com.gooker.dfg.domain;
 
-import com.aoeng.degu.domain.*;
-import com.aoeng.degu.domain.Location;
 
 import java.io.Serializable;
 
@@ -13,13 +11,13 @@ public class LocationInfo implements Serializable{
 	 */
 	private static final long serialVersionUID = 1684497092277007005L;
 	
-	private com.aoeng.degu.domain.Location location ;
+	private Location location ;
 
 	private String formatted_address ;
 	private String business ;
 	private AddressComponent addressComponent ;
 	private int cityCode ;
-	public com.aoeng.degu.domain.Location getLocation() {
+	public Location getLocation() {
 		return location;
 	}
 	public void setLocation(Location location) {

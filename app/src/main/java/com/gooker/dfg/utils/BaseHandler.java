@@ -3,27 +3,26 @@
  */
 package com.gooker.dfg.utils;
 
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Handler;
 import android.os.Message;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.services.DataCallback;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.utils.*;
-import com.aoeng.degu.utils.RequestVO;
-import com.aoeng.degu.utils.common.Logger;
-import com.aoeng.degu.utils.common.UIUtils;
+import com.gooker.dfg.R;
+import com.gooker.dfg.services.DataCallback;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.utils.common.Logger;
+import com.gooker.dfg.utils.common.UIUtils;
 
 /**
  * May 21, 2014 5:11:23 PM
  * 
  */
 public class BaseHandler extends Handler {
-	private static final String TAG = com.aoeng.degu.utils.BaseHandler.class.getName();
+	private static final String TAG = BaseHandler.class.getName();
 	private DataCallback callBack;
-	private com.aoeng.degu.utils.RequestVO reqVo;
+	private RequestVO reqVo;
 	private ProgressDialog progressDialog;
 
 	public BaseHandler(DataCallback callBack, RequestVO reqVo) {

@@ -3,11 +3,10 @@
  */
 package com.gooker.dfg.utils;
 
+import com.gooker.dfg.parser.BaseParser;
+
 import java.util.HashMap;
 
-import android.content.Context;
-
-import com.aoeng.degu.parser.BaseParser;
 
 /**
  * Mar 23, 2014 11:51:00 AM

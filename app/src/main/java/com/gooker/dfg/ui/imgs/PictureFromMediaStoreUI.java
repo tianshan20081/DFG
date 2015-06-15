@@ -1,8 +1,5 @@
 package com.gooker.dfg.ui.imgs;
 
-import java.util.Date;
-import java.util.HashMap;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
@@ -13,16 +10,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.domain.BaiDuLocation;
-import com.aoeng.degu.domain.ImageInfo;
-import com.aoeng.degu.parser.BaiDuLocationParser;
-import com.aoeng.degu.services.DataCallback;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.utils.CodeUtils;
-import com.aoeng.degu.utils.DataUtils;
-import com.aoeng.degu.utils.RequestVO;
-import com.aoeng.degu.utils.net.URLUtils;
+import com.gooker.dfg.R;
+import com.gooker.dfg.domain.BaiDuLocation;
+import com.gooker.dfg.domain.ImageInfo;
+import com.gooker.dfg.parser.BaiDuLocationParser;
+import com.gooker.dfg.services.DataCallback;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.utils.CodeUtils;
+import com.gooker.dfg.utils.DataUtils;
+import com.gooker.dfg.utils.RequestVO;
+import com.gooker.dfg.utils.net.URLUtils;
+
+import java.util.Date;
+import java.util.HashMap;
 
 public class PictureFromMediaStoreUI extends BaseUI {
 

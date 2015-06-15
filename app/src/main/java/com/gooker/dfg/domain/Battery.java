@@ -8,8 +8,8 @@ public class Battery {
 	public Calendar mLastCharged;
 	public Status mStatus;
 
-	public static com.aoeng.degu.domain.Battery fromByte(byte[] b) {
-		com.aoeng.degu.domain.Battery battery = new com.aoeng.degu.domain.Battery();
+	public static Battery fromByte(byte[] b) {
+		Battery battery = new Battery();
 		battery.mBatteryLevel = b[0];
 		battery.mStatus = Status.fromByte(b[9]);
 		battery.mLastCharged = Calendar.getInstance();

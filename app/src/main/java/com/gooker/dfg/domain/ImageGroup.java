@@ -1,14 +1,13 @@
 package com.gooker.dfg.domain;
 
+import com.gooker.dfg.constant.Constants;
+import com.gooker.dfg.utils.common.StringUtils;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.alibaba.fastjson.JSON;
-import com.aoeng.degu.constant.Constants;
-import com.aoeng.degu.domain.ImageInfo;
-import com.aoeng.degu.utils.common.StringUtils;
 
 public class ImageGroup implements Serializable {
 
@@ -185,7 +184,7 @@ public class ImageGroup implements Serializable {
 		return this.albumSize;
 	}
 
-	public boolean isSameGroup(com.aoeng.degu.domain.ImageGroup imageGroup) {
+	public boolean isSameGroup(ImageGroup imageGroup) {
 		// TODO Auto-generated method stub
 		if (isBelongGroup(imageGroup.getMinDate().getTime()) || isBelongGroup(imageGroup.getMaxDate().getTime())) {
 			return true;

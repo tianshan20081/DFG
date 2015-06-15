@@ -1,10 +1,9 @@
 package com.gooker.dfg.utils;
 
-import com.aoeng.degu.services.BaseTask;
-import com.aoeng.degu.services.DataCallback;
-import com.aoeng.degu.utils.BaseHandler;
-import com.aoeng.degu.utils.RequestVO;
-import com.aoeng.degu.utils.common.UIUtils;
+
+import com.gooker.dfg.services.BaseTask;
+import com.gooker.dfg.services.DataCallback;
+import com.gooker.dfg.utils.common.UIUtils;
 
 public class DataUtils {
 

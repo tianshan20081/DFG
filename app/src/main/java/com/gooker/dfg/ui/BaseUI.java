@@ -25,6 +25,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
+import cn.jpush.android.api.JPushInterface;
+
 /**
  * May 21, 2014 4:48:31 PM
  * 

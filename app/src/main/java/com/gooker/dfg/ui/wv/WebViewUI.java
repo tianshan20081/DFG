@@ -1,18 +1,14 @@
 package com.gooker.dfg.ui.wv;
 
+
 import android.content.Intent;
 import android.view.View;
-import android.view.View.OnClickListener;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.ui.wv.*;
-import com.aoeng.degu.ui.wv.JsCallJavaUI;
-import com.aoeng.degu.ui.wv.PbWebViewUI;
-import com.aoeng.degu.ui.wv.SimpleWebViewUI;
-import com.aoeng.degu.utils.common.UIUtils;
+import com.gooker.dfg.R;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.utils.common.UIUtils;
 
-public class WebViewUI extends BaseUI implements OnClickListener {
+public class WebViewUI extends BaseUI implements View.OnClickListener {
 
 	@Override
 	public void onClick(View v) {

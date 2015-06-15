@@ -1,8 +1,9 @@
 package com.gooker.dfg.ui.chartengine;
 
+
 import android.view.View;
 
-import com.aoeng.degu.ui.BaseUI;
+import com.gooker.dfg.ui.BaseUI;
 
 public class SimpleChartEngineUI extends BaseUI {
 

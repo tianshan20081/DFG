@@ -1,12 +1,11 @@
 package com.gooker.dfg.parser;
 
-import org.json.JSONException;
-
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
-import com.aoeng.degu.domain.BaiDuLocation;
-import com.aoeng.degu.parser.BaseParser;
+import com.gooker.dfg.domain.BaiDuLocation;
+
+import org.json.JSONException;
 
 public class BaiDuLocationParser extends BaseParser<BaiDuLocation> {
 
@@ -18,5 +17,6 @@ public class BaiDuLocationParser extends BaseParser<BaiDuLocation> {
 		}
 		return null;
 	}
+
 
 }

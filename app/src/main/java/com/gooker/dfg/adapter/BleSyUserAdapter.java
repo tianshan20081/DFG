@@ -6,11 +6,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.utils.common.UIUtils;
 import com.chronocloud.ryfibluetoothlibrary.entity.User;
+import com.gooker.dfg.utils.common.UIUtils;
 
 import java.util.List;
+
 
 public class BleSyUserAdapter extends BaseAdapter {
 

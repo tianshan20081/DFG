@@ -12,8 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.views.swipe.SwipeListView;
+import com.gooker.dfg.views.swipe.SwipeListView;
 
 import java.util.List;
 

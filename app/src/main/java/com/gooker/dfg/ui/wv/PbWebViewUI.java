@@ -12,9 +12,10 @@ import android.webkit.WebSettings.ZoomDensity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.views.ProgressBarWebview;
+import com.gooker.dfg.R;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.views.ProgressBarWebview;
+
 
 /**
  * @author sczhang 2014年12月6日 下午3:57:30

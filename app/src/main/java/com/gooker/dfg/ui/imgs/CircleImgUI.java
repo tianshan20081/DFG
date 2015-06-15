@@ -5,8 +5,8 @@ package com.gooker.dfg.ui.imgs;
 
 import android.view.View;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
+import com.gooker.dfg.ui.BaseUI;
+
 
 /**
  * May 16, 2014 6:06:48 PM 圓形圖片

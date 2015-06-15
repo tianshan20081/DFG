@@ -17,9 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.utils.ImagesURL;
-import com.aoeng.degu.utils.common.Toaster;
+import com.gooker.dfg.utils.ImagesURL;
+import com.gooker.dfg.utils.common.Toaster;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

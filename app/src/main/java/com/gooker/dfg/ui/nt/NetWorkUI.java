@@ -1,5 +1,22 @@
 package com.gooker.dfg.ui.nt;
 
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.gooker.dfg.R;
+import com.gooker.dfg.utils.common.Toaster;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -18,30 +35,14 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
-import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.telephony.TelephonyManager;
-import android.text.TextUtils;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
-import com.aoeng.degu.R;
-import com.aoeng.degu.utils.common.Toaster;
 
 public class NetWorkUI extends Activity implements OnClickListener {
-	private static final String TAG = com.aoeng.degu.ui.nt.NetWorkUI.class.getName().toUpperCase();
+	private static final String TAG = NetWorkUI.class.getName().toUpperCase();
 	private BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
 	private Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
-			Toaster.toastCenter(com.aoeng.degu.ui.nt.NetWorkUI.this, "可用端口：" + msg.what, false);
+			Toaster.toastCenter(NetWorkUI.this, "可用端口：" + msg.what, false);
 		};
 	};
 	private Button btnScanServerPort;

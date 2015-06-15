@@ -3,10 +3,6 @@
  */
 package com.gooker.dfg.application;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 import android.app.Activity;
 import android.app.Application;
 import android.content.ComponentName;
@@ -15,26 +11,31 @@ import android.content.ServiceConnection;
 import android.os.Debug;
 import android.os.IBinder;
 import android.os.Looper;
+
+import com.chronocloud.ryfibluetoothlibrary.BluetoothOpration;
+import com.gooker.dfg.utils.AppUtils;
+import com.gooker.dfg.utils.ThreadPoolManager;
+import com.gooker.dfg.utils.common.DensityUtils;
+import com.gooker.dfg.utils.common.FileUtils;
+import com.gooker.dfg.utils.common.LogUtils;
+import com.gooker.dfg.utils.common.Logger;
+import com.gooker.dfg.utils.common.StringUtils;
+import com.gooker.dfg.utils.common.SystemUtils;
+import com.gooker.dfg.utils.qiniu.QNApi;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
-
-import com.aoeng.degu.utils.AppUtils;
-import com.aoeng.degu.utils.ThreadPoolManager;
-import com.aoeng.degu.utils.common.DensityUtils;
-import com.aoeng.degu.utils.common.FileUtils;
-import com.aoeng.degu.utils.common.LogUtils;
-import com.aoeng.degu.utils.common.Logger;
-import com.aoeng.degu.utils.common.StringUtils;
-import com.aoeng.degu.utils.common.SystemUtils;
-import com.aoeng.degu.utils.qiniu.QNApi;
-import com.chronocloud.ryfibluetoothlibrary.BluetoothOpration;
 
 /**
  * May 21, 2014 4:54:26 PM
  * 
  */
 public class DGApplication extends Application {
-	private static com.aoeng.degu.application.DGApplication mApplication;
+	private static DGApplication mApplication;
 	/** 缓存路径 */
 	private static String cacheDir;
 	private static Looper mMainThreadLooper;

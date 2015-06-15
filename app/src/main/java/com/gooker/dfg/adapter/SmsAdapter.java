@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.aoeng.degu.R;
 
 public class SmsAdapter extends CursorAdapter {
 

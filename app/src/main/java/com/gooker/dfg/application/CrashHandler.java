@@ -1,38 +1,37 @@
 package com.gooker.dfg.application;
 
+import android.content.Intent;
+import android.os.Looper;
+import android.os.SystemClock;
+
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.ui.HomeUI;
+import com.gooker.dfg.utils.AppUtils;
+import com.gooker.dfg.utils.common.DateUtil;
+import com.gooker.dfg.utils.common.FileUtils;
+import com.gooker.dfg.utils.common.LogUtils;
+import com.gooker.dfg.utils.common.Logger;
+import com.gooker.dfg.utils.common.UIUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.lang.Thread.UncaughtExceptionHandler;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import android.content.Intent;
-import android.os.Looper;
-import android.os.SystemClock;
-
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.ui.HomeUI;
-import com.aoeng.degu.utils.AppUtils;
-import com.aoeng.degu.utils.common.DateUtil;
-import com.aoeng.degu.utils.common.FileUtils;
-import com.aoeng.degu.utils.common.LogUtils;
-import com.aoeng.degu.utils.common.Logger;
-import com.aoeng.degu.utils.common.UIUtils;
 
 public class CrashHandler implements UncaughtExceptionHandler {
-	private static final String TAG = com.aoeng.degu.application.CrashHandler.class.getName();
-	private static com.aoeng.degu.application.CrashHandler mCrashHandler = new com.aoeng.degu.application.CrashHandler();
+	private static final String TAG = CrashHandler.class.getName();
+	private static CrashHandler mCrashHandler = new CrashHandler();
 	private UncaughtExceptionHandler mDefaultUncaughtExceptionHandler;
 
 	private CrashHandler() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static com.aoeng.degu.application.CrashHandler getInstance() {
+	public static CrashHandler getInstance() {
 		return mCrashHandler;
 	}
 

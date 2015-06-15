@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.utils.cv.TwoCacheImageLoader;
+import com.gooker.dfg.utils.cv.TwoCacheImageLoader;
+
 
 /**
  * @author [ShaoCheng Zhang] Sep 5, 2013:2:50:54 PM

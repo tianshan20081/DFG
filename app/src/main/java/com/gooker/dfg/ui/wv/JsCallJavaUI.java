@@ -7,10 +7,11 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.aoeng.degu.R;
-import com.aoeng.degu.ui.BaseUI;
-import com.aoeng.degu.utils.common.FormatUtils;
-import com.aoeng.degu.utils.common.UIUtils;
+import com.gooker.dfg.R;
+import com.gooker.dfg.ui.BaseUI;
+import com.gooker.dfg.utils.common.FormatUtils;
+import com.gooker.dfg.utils.common.UIUtils;
+
 
 /**
  * 

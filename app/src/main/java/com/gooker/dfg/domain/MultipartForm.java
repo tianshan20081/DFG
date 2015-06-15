@@ -2,7 +2,6 @@ package com.gooker.dfg.domain;
 
 import java.io.File;
 import java.io.Serializable;
-import java.lang.reflect.Field;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

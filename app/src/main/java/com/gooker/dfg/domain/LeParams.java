@@ -12,8 +12,8 @@ public class LeParams implements Parcelable {
 	public int timeout;
 	public int advInt;
 
-	public static com.aoeng.degu.domain.LeParams fromByte(byte[] b) {
-		com.aoeng.degu.domain.LeParams params = new com.aoeng.degu.domain.LeParams();
+	public static LeParams fromByte(byte[] b) {
+		LeParams params = new LeParams();
 
 		params.connIntMax = 0xffff & (0xff & b[0] | (0xff & b[1]) << 8);
 		params.connIntMax = 0xffff & (0xff & b[2] | (0xff & b[3]) << 8);
@@ -57,15 +57,15 @@ public class LeParams implements Parcelable {
     }
 
     @SuppressWarnings("unused")
-    public static final Creator<com.aoeng.degu.domain.LeParams> CREATOR = new Creator<com.aoeng.degu.domain.LeParams>() {
+    public static final Creator<LeParams> CREATOR = new Creator<LeParams>() {
         @Override
-        public com.aoeng.degu.domain.LeParams createFromParcel(Parcel in) {
-            return new com.aoeng.degu.domain.LeParams(in);
+        public LeParams createFromParcel(Parcel in) {
+            return new LeParams(in);
         }
 
         @Override
-        public com.aoeng.degu.domain.LeParams[] newArray(int size) {
-            return new com.aoeng.degu.domain.LeParams[size];
+        public LeParams[] newArray(int size) {
+            return new LeParams[size];
         }
     };
 }
