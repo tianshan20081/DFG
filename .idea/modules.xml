@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DFG.iml" filepath="$PROJECT_DIR$/DFG.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFG.iml" filepath="$PROJECT_DIR$/DFG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFG.iml" filepath="$PROJECT_DIR$/DFG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dfg/Dfg.iml" filepath="$PROJECT_DIR$/Dfg/Dfg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jdui/Jdui.iml" filepath="$PROJECT_DIR$/Jdui/Jdui.iml" />
     </modules>
   </component>
 </project>

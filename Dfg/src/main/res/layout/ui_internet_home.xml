@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout style="@style/lyVerticalStyle">
+
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnDomParser" style="@style/btnItem"
+                android:text="DomParser" />
+
+            <Button android:id="@+id/btnNormalDownload" style="@style/btnItem"
+                android:text="@string/normalDownload" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnMulityDownload" style="@style/btnItem"
+                android:text="MulityDownload" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnQnSingleUpload" style="@style/btnItem"
+                android:text="@string/qnSingleUpload" />
+
+            <Button android:id="@+id/btnQnBreakpointsUpload" style="@style/btnItem"
+                android:text="@string/qnBreakPointUpload" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

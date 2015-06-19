@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvLinearLayout" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/lyHorizontalStyle">
+
+        <Button android:id="@+id/btnConnect" style="@style/btnItem"
+            android:text="@string/str_connect" />
+        <Button android:id="@+id/btnDisConnect" style="@style/btnItem"
+            android:text="@string/str_disconnect" />
+    </LinearLayout>
+
+    <ListView android:id="@+id/lv_data" android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="1"></ListView>
+
+    <LinearLayout android:id="@+id/ll_test" android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="1" android:gravity="center"
+        android:orientation="vertical" android:padding="10dip" android:visibility="gone">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn_read" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/readnumber" />
+
+            <EditText android:id="@+id/et_number" android:layout_width="0dip"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:singleLine="true" />
+
+            <Button android:id="@+id/btn_write" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/writenumber" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/scale_weight" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="0.0kg" android:textSize="30dip"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_mac_address" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginRight="20dip" android:text="@string/p9_test" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/sex" />
+
+            <RadioGroup android:id="@+id/rg_sex" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rb_man" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:checked="true"
+                    android:text="@string/man" />
+
+                <RadioButton android:id="@+id/rb_woman" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/woman" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/age" />
+
+            <EditText android:id="@+id/et_age" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:inputType="number" android:text="30" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" android:text="@string/height" />
+
+            <EditText android:id="@+id/et_height" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:inputType="number"
+                android:text="170" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="cm" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_send" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="10dip"
+            android:background="@color/red" android:text="@string/scale"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="gone">
+
+            <EditText android:id="@+id/et_value" android:layout_width="0dip"
+                android:layout_height="wrap_content" android:layout_weight="1" android:text="A0" />
+
+            <Button android:id="@+id/btn_send1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

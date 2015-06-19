@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle">
+
+    <ScrollView style="@style/scrollViewStyle">
+
+        <LinearLayout style="@style/lyVerticalStyle">
+
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button android:id="@+id/btnStartService" style="@style/btnItem"
+                    android:text="StartServices" />
+
+                <Button android:id="@+id/btnStopService" style="@style/btnItem"
+                    android:text="StopServices" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button android:id="@+id/btnBindService" style="@style/btnItem"
+                    android:text="BindServices" />
+
+                <Button android:id="@+id/btnUnBindService" style="@style/btnItem"
+                    android:text="UnBindServices" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button android:id="@+id/btnServices" style="@style/btnItem"
+                    android:text="GetAllServices" />
+
+                <Button android:id="@+id/btnClearServices" style="@style/btnItem"
+                    android:text="ClearAllServices" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button android:id="@+id/btnIntentService" style="@style/btnItem"
+                    android:text="StartIntentService" />
+                <Button android:id="@+id/btnBindsService" style="@style/btnItem"
+                    android:text="BindsService" />
+            </LinearLayout>
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button android:id="@+id/btnUnBindsService" style="@style/btnItem"
+                    android:text="UnBindsService" />
+                <Button android:id="@+id/btnCallBindService" style="@style/btnItem"
+                    android:text="CallBindService" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

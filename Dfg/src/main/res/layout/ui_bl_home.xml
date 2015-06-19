@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lyVerticalStyle">
+
+    <LinearLayout style="@style/lyHorizontalStyle">
+
+        <Button android:id="@+id/btnBleCheck" style="@style/btnItem"
+            android:text="@string/ble_check" />
+
+        <Button android:id="@+id/btnBleStart" style="@style/btnItem"
+            android:text="@string/ble_start_scan" />
+    </LinearLayout>
+    <LinearLayout style="@style/lyHorizontalStyle">
+
+        <Button android:id="@+id/btnFinish" style="@style/btnItem" android:text="@string/finish" />
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lvBles" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

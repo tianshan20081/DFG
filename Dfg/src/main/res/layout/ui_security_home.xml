@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnAntidex2Jar" style="@style/btnItem"
+                android:text="Antidex2Jar" />
+            <Button android:id="@+id/btnProguard" style="@style/btnItem" android:text="代碼混淆" />
+        </LinearLayout>
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnAntiDebug" style="@style/btnItem" android:text="反调试模式" />
+            <Button android:id="@+id/btnCheckEmu" style="@style/btnItem"
+                android:text="判斷是不是模擬器運行" />
+        </LinearLayout>
+        <LinearLayout style="@style/lyItem">
+
+            <Button android:id="@+id/btnCheckSignature" style="@style/btnItem"
+                android:text="驗證應用程序簽名" />
+            <Button android:id="@+id/btnCheckCrc" style="@style/btnItem" android:text="校驗保護" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
