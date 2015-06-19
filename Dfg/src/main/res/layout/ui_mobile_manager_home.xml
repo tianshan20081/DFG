@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <ScrollView style="@style/scrollViewStyle">
 
@@ -9,8 +10,29 @@
 
             <LinearLayout style="@style/lyItem">
 
-                <Button android:id="@+id/btnGetMobileNo" style="@style/btnItem"
-                    android:text="@string/str_get_mobile_no" />
+                <Button
+                    android:id="@+id/btnGetMobileNo"
+                    style="@style/btnItem"
+                    android:text="@string/str_get_mobile_no"/>
+
+                <Button
+                    android:id="@+id/btnSetTimeZone"
+                    style="@style/btnItem"
+                    android:text="@string/str_set_timezone"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/lyItem">
+
+                <Button
+                    android:id="@+id/btnGetTimeZone"
+                    style="@style/btnItem"
+                    android:text="@string/str_get_timezone"/>
+
+                <Button
+                    android:id="@+id/btnResetTimeZone"
+                    style="@style/btnItem"
+                    android:text="@string/str_reset_timezone"/>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

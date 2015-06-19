@@ -3,11 +3,16 @@
  */
 package com.gooker.dfg.ui.mm;
 
+import android.app.AlarmManager;
 import android.content.Context;
 import android.telephony.TelephonyManager;
 import android.view.View;
 
 import com.gooker.dfg.R;
+import com.gooker.dfg.utils.common.StringUtils;
+import com.gooker.dfg.utils.common.UIUtils;
+
+import java.util.TimeZone;
 
 
 /**
@@ -15,43 +20,43 @@ import com.gooker.dfg.R;
  */
 public class MobileManagerHomeUI extends com.gooker.dfg.ui.BaseUI {
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see android.view.View.OnClickListener#onClick(android.view.View)
-     */
+
     @Override
     public void onClick(View v) {
-        // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.btnGetMobileNo:
                 getMobileNo();
                 break;
-
+            case R.id.btnSetTimeZone:
+                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+                alarmManager.setTimeZone("Asia/Taipei");
+                break;
+            case R.id.btnGetTimeZone:
+                TimeZone tz = TimeZone.getDefault();
+                String s = "TimeZone   " + tz.getDisplayName(false, TimeZone.SHORT) + " Timezon id :: " + tz.getID();
+                UIUtils.toastShow(s);
+                break;
+            case R.id.btnResetTimeZone:
+                AlarmManager alarmManager2 = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+                alarmManager2.setTimeZone("Asia/Shanghai");
+                break;
             default:
                 break;
         }
     }
 
-    /**
-     *
-     */
+
     private void getMobileNo() {
-        // TODO Auto-generated method stub
         TelephonyManager tm = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
         String mobileNo = tm.getLine1Number();
-        if (!com.gooker.dfg.utils.common.StringUtils.isEmpty(mobileNo)) {
-            com.gooker.dfg.utils.common.UIUtils.getToastSafe("mobile No is " + mobileNo);
+        if (!StringUtils.isEmpty(mobileNo)) {
+            UIUtils.getToastSafe("mobile No is " + mobileNo);
         } else {
-            com.gooker.dfg.utils.common.UIUtils.getToastSafe("load mobile No is null");
+            UIUtils.getToastSafe("load mobile No is null");
         }
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.aoeng.degu.ui.BaseUI#loadViewLayout()
-     */
+
     @Override
     protected void loadViewLayout() {
         // TODO Auto-generated method stub
@@ -65,7 +70,6 @@ public class MobileManagerHomeUI extends com.gooker.dfg.ui.BaseUI {
      */
     @Override
     protected void findViewById() {
-        // TODO Auto-generated method stub
 
     }
 
@@ -76,18 +80,15 @@ public class MobileManagerHomeUI extends com.gooker.dfg.ui.BaseUI {
      */
     @Override
     protected void setListener() {
-        // TODO Auto-generated method stub
         findView(R.id.btnGetMobileNo).setOnClickListener(this);
+        findView(R.id.btnSetTimeZone).setOnClickListener(this);
+        findView(R.id.btnGetTimeZone).setOnClickListener(this);
+        findView(R.id.btnResetTimeZone).setOnClickListener(this);
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see com.aoeng.degu.ui.BaseUI#processLogic()
-     */
+
     @Override
     protected void processLogic() {
-        // TODO Auto-generated method stub
 
     }
 

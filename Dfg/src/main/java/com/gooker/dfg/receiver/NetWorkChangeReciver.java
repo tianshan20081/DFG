@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
 import android.util.Log;
 
 import com.gooker.dfg.utils.common.StringUtils;
+import com.gooker.dfg.utils.common.UIUtils;
 
 public class NetWorkChangeReciver extends BroadcastReceiver {
     private static final String TAG = "NetWorkChangeReciver";
@@ -17,8 +18,6 @@ public class NetWorkChangeReciver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
 
         if (null != intent) {
             String action = intent.getAction();
@@ -27,10 +26,14 @@ public class NetWorkChangeReciver extends BroadcastReceiver {
                     ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
                     Log.i(TAG, "onReceive(), context:" + context);
                     ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+                    NetworkInfo[] info = manager.getAllNetworkInfo();
+
                     NetworkInfo wifiInfo = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
                     NetworkInfo activeInfo = manager.getActiveNetworkInfo();
                     if (activeInfo != null && wifiInfo.isConnected()) {
                         Log.e(TAG, "NetworkChangeReceiver  wifiInfo.isConnected()");
+                        UIUtils.toastShow("NetworkChangeReceiver  wifiInfo.isConnected()");
+
 
                     }
                 }

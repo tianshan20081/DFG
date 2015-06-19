@@ -71,6 +71,8 @@
     <!-- jpush end -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <!-- 允许设置时区-->
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
     <application
         android:name=".application.DGApplication"
         android:allowBackup="true"
