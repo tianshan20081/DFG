@@ -12,6 +12,13 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Dfg" />
             <option value="$PROJECT_DIR$/Jdui" />
+            <option value="$PROJECT_DIR$/aidlclient" />
+            <option value="$PROJECT_DIR$/aidlserver" />
+            <option value="$PROJECT_DIR$/hacks" />
+            <option value="$PROJECT_DIR$/recycleview" />
+            <option value="$PROJECT_DIR$/svg" />
+            <option value="$PROJECT_DIR$/volley-android" />
+            <option value="$PROJECT_DIR$/websocket" />
           </set>
         </option>
       </GradleProjectSettings>

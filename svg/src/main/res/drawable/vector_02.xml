@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="800dp"
+        android:height="800dp"
+        android:viewportHeight="512"
+        android:viewportWidth="512"
+    >
+
+
+    <group
+        android:name="rotationName"
+        android:pivotX="300.0"
+        android:pivotY="300.0"
+
+        >
+
+        <!--android:rotation="30"-->
+        <path android:name="juxing"
+              android:pathData="M 100 100   l 200 200  z"
+              android:fillColor="#ff00ee"
+              />
+        <!--l 200 100 l 100 200-->
+        <!--<path android:name="sanjiaoxing"-->
+              <!--android:pathData="M 50 50 l 50 80 l 80 80  z"-->
+              <!--android:fillColor="#aa88aa"-->
+            <!--/>-->
+    </group>
+
+</vector>

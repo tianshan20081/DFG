@@ -41,9 +41,16 @@ public class InternetHomeUI extends BaseUI {
             case R.id.btnQnBreakpointsUpload:
 //			startActivity(new Intent(this, QnBreakPointUploadUI.class));
                 break;
+            case R.id.btnWebSocket:
+                webSocketClient();
+                break;
             default:
                 break;
         }
+    }
+
+    private void webSocketClient() {
+        
     }
 
     /*
@@ -70,6 +77,7 @@ public class InternetHomeUI extends BaseUI {
         this.findView(R.id.btnMulityDownload).setOnClickListener(this);
         this.findView(R.id.btnQnSingleUpload).setOnClickListener(this);
         this.findView(R.id.btnQnBreakpointsUpload).setOnClickListener(this);
+        this.findView(R.id.btnWebSocket).setOnClickListener(this);
     }
 
     /*

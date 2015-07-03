@@ -46,6 +46,8 @@ public class ImageViewsHomeUI extends Activity implements OnClickListener {
         this.findViewById(R.id.btnGraffiti).setOnClickListener(this);
         this.findViewById(R.id.btnMitoPic).setOnClickListener(this);
         this.findViewById(R.id.btnMesh).setOnClickListener(this);
+        this.findViewById(R.id.btnAlbum).setOnClickListener(this);
+        this.findViewById(R.id.btnAlbumFresco).setOnClickListener(this);
     }
 
     /*
@@ -82,22 +84,29 @@ public class ImageViewsHomeUI extends Activity implements OnClickListener {
                 UIUtils.startActivity(PicturesFromMediaStoreUI.class);
                 break;
             case R.id.btnCircleImg:
-                startActivity(new Intent(ImageViewsHomeUI.this, CircleImgUI.class));
+                startActivity(new Intent(this, CircleImgUI.class));
                 break;
             case R.id.btnShapeImg:
-                startActivity(new Intent(ImageViewsHomeUI.this, CustomShapeImgUI.class));
+                startActivity(new Intent(this, CustomShapeImgUI.class));
                 break;
             case R.id.btnPicIcon:
-                startActivity(new Intent(ImageViewsHomeUI.this, PicIconUI.class));
+                startActivity(new Intent(this, PicIconUI.class));
                 break;
             case R.id.btnImgCrop:
-                startActivity(new Intent(ImageViewsHomeUI.this, PicCropUI.class));
+                startActivity(new Intent(this, PicCropUI.class));
                 break;
             case R.id.btnImageAutoGroup:
-                startActivity(new Intent(ImageViewsHomeUI.this, ImageAutoGroupUI.class));
+                startActivity(new Intent(this, ImageAutoGroupUI.class));
                 break;
             case R.id.btnImagePlay:
                 startActivity(new Intent(this, ImagePlayerUI.class));
+                break;
+            case R.id.btnAlbum:
+                startActivity(new Intent(this, AlbumUI.class
+                ));
+                break; case R.id.btnAlbumFresco:
+                startActivity(new Intent(this, AlbumFrescoUI.class
+                ));
                 break;
             default:
                 break;

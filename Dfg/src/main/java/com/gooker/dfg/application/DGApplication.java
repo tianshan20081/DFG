@@ -13,6 +13,7 @@ import android.os.IBinder;
 import android.os.Looper;
 
 import com.chronocloud.ryfibluetoothlibrary.BluetoothOpration;
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.gooker.dfg.utils.AppUtils;
 import com.gooker.dfg.utils.ThreadPoolManager;
 import com.gooker.dfg.utils.common.DensityUtils;
@@ -74,6 +75,8 @@ public class DGApplication extends Application {
         printCommonInfo();
         Debug.startMethodTracing("filename");
         Debug.stopMethodTracing();
+
+        Fresco.initialize(this);
     }
 
     private void initJpush() {

@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gooker.dfg">
+    package="com.gooker.dfg" >
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- Ble permission -->
@@ -25,14 +22,11 @@
         android:required="true" />
     <!-- Ble permission -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
 
     <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
 
     <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -56,7 +50,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -71,19 +64,20 @@
     <!-- jpush end -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <!-- 允许设置时区-->
+    <!-- 允许设置时区 -->
     <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
     <application
         android:name=".application.DGApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
         <uses-library android:name="android.test.runner" />
 
         <activity
             android:name=".ui.HomeUI"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -102,14 +96,14 @@
         <activity android:name=".ui.SqlLiteDBUI" />
         <activity android:name=".ui.uis.UIsUI" />
         <activity android:name=".ui.LocationsUI" />
-        <activity android:name=".ui.uis.ActionUI">
+        <activity android:name=".ui.uis.ActionUI" >
             <intent-filter>
                 <action android:name=".ui.uis.ACTION_UIS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.uis.Action2UI">
+        <activity android:name=".ui.uis.Action2UI" >
             <intent-filter>
                 <action android:name=".ui.uis.ACTION_UIS" />
                 <action android:name="android.intent.action.GET_CONTENT" />
@@ -123,7 +117,7 @@
         <activity android:name=".ui.uis.Group1UI" />
         <activity android:name=".ui.uis.Group2UI" />
         <activity android:name=".ui.uis.Group3UI" />
-        <activity android:name=".ui.uis.FileInfosUI">
+        <activity android:name=".ui.uis.FileInfosUI" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -136,41 +130,38 @@
         <receiver
             android:name=".receiver.ShortMessageReceiver"
             android:enabled="true"
-            android:permission="android.permission.BROADCAST_SMS">
-            <intent-filter android:priority="2147483647">
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" >
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
         <receiver
             android:name=".receiver.InCallReceiver"
-            android:enabled="true">
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="android.intent.PHONE_STATE" />
             </intent-filter>
         </receiver>
         <receiver
             android:name=".receiver.OutCallReceiver"
-            android:enabled="true">
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTCOMING_CALL" />
             </intent-filter>
         </receiver>
         <receiver
             android:name=".receiver.StartUpReceiver"
-            android:enabled="true">
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".receiver.NetWorkChangeReciver"
-            android:enabled="true">
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-
             </intent-filter>
-
         </receiver>
 
         <activity android:name=".receiver.ReceiverUI" />
@@ -206,12 +197,12 @@
 
         <activity android:name=".ui.services.ServiceUI" />
 
-        <service android:name=".aidl.AidlService">
+        <service android:name=".aidl.AidlService" >
             <intent-filter>
                 <action android:name=".aidl.IMyService" />
             </intent-filter>
         </service>
-        <service android:name=".aidl.ProductService">
+        <service android:name=".aidl.ProductService" >
             <intent-filter>
                 <action android:name=".aidl.ProductService" />
             </intent-filter>
@@ -365,7 +356,7 @@
         <activity android:name=".ui.chartengine.ChartEngineHomeUI" />
         <activity android:name=".ui.chartengine.SimpleChartEngineUI" />
 
-        <receiver android:name=".ui.media.MediaControlReceiver">
+        <receiver android:name=".ui.media.MediaControlReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
@@ -391,7 +382,7 @@
         <activity
             android:name="cn.jpush.android.ui.PushActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
             <intent-filter>
                 <action android:name="cn.jpush.android.ui.PushActivity" />
 
@@ -409,7 +400,7 @@
         <service
             android:name="cn.jpush.android.service.PushService"
             android:enabled="true"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.REGISTER" />
                 <action android:name="cn.jpush.android.intent.REPORT" />
@@ -421,8 +412,8 @@
         <!-- Required SDK核心功能 -->
         <receiver
             android:name="cn.jpush.android.service.PushReceiver"
-            android:enabled="true">
-            <intent-filter android:priority="1000">
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
                 <!-- Required  显示通知栏 -->
                 <category android:name="com.gooker.dfg" />
@@ -446,7 +437,7 @@
         <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver
             android:name=".receiver.JpushReciver"
-            android:enabled="true">
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.REGISTRATION" />
                 <!-- Required  用户注册SDK的intent -->
@@ -476,6 +467,20 @@
 
 
         <!-- jpush end -->
+        <activity
+            android:name=".ui.imgs.AlbumUI"
+            android:label="@string/title_activity_album_ui" >
+        </activity>
+        <activity
+            android:name=".ui.imgs.AlbumFrescoUI"
+            android:label="@string/title_activity_album_fresco_ui" >
+        </activity>
+
+        <service
+            android:name=".services.StudentService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hacks</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_delegate_ui">DelegateUI</string>
+    <string name="title_activity_lv_header_ui">LvHeaderUI</string>
+    <string name="title_activity_svg_home_ui">SvgHomeUI</string>
+</resources>

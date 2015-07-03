@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.view.View;
 
 import com.gooker.dfg.R;
+import com.gooker.dfg.utils.common.LogUtils;
 
 
 public class MoiveImageView extends View {
@@ -23,12 +24,17 @@ public class MoiveImageView extends View {
     Matrix mMatrix = null;
     float mAngle = 0.0f;
     float mScale = 1f;// 1为原图的大小
+    int mImgWidth;
+    int mImgHeight;
 
     public MoiveImageView(Context context) {
         super(context);
         mPaint = new Paint();
         mPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
         bitMap = BitmapFactory.decodeResource(this.getResources(), R.drawable.pic_moive);
+        mImgWidth = bitMap.getWidth();
+        mImgHeight = bitMap.getHeight();
+        LogUtils.e("[MoiveImageView] src img w :" + mImgWidth + "\t h :" + mImgHeight);
         bitMapDisplay = bitMap;
         mMatrix = new Matrix();
         // 获取图片宽高

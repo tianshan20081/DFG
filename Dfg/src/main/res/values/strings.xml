@@ -158,6 +158,8 @@
     <string name="str_set_timezone">设置时区</string>
     <string name="str_get_timezone">获取当前时区</string>
     <string name="str_reset_timezone">恢复当前时区</string>
+    <string name="title_activity_album_ui">AlbumUI</string>
+    <string name="title_activity_album_fresco_ui">AlbumFrescoUI</string>
 
 
 

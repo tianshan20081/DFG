@@ -16,6 +16,7 @@ import com.gooker.dfg.utils.common.FileUtils;
 import com.gooker.dfg.utils.common.LogUtils;
 import com.gooker.dfg.utils.common.StringUtils;
 import com.gooker.dfg.utils.common.UIUtils;
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -35,9 +36,22 @@ import java.io.FileOutputStream;
 public class ImageLoaderUtils {
 
     private static ImageLoader mImageLoader = null;
-    private static DisplayImageOptions imageOptions = new DisplayImageOptions.Builder().showImageOnFail(R.drawable.pic_thumb)
-            .showImageForEmptyUri(R.drawable.pic_thumb).showStubImage(R.drawable.pic_thumb).bitmapConfig(Config.RGB_565)
-            .imageScaleType(ImageScaleType.IN_SAMPLE_INT).cacheInMemory(true).cacheOnDisk(true).considerExifParams(true).build();
+    private static DisplayImageOptions imageOptions = new DisplayImageOptions.Builder()//
+            //
+            .showImageOnFail(R.drawable.pic_thumb)
+                    //
+            .showImageForEmptyUri(R.drawable.pic_thumb)
+                    //
+            .showStubImage(R.drawable.pic_thumb)
+                    //
+            .bitmapConfig(Config.RGB_565)
+            .imageScaleType(ImageScaleType.IN_SAMPLE_INT)
+                    //
+            .cacheInMemory(true)
+                    //
+            .cacheOnDisk(true)
+                    //
+            .considerExifParams(true).build();
     private static File cacheDir = new File(FileUtils.getCacheDir());
     private static ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(UIUtils.getContext())
             .memoryCacheExtraOptions(320, 480)
@@ -52,10 +66,14 @@ public class ImageLoaderUtils {
                     // default
             .tasksProcessingOrder(QueueProcessingType.FIFO)
                     // default
-            .denyCacheImageMultipleSizesInMemory().memoryCache(new LruMemoryCache(2 * 1024 * 1024)).memoryCacheSize(2 * 1024 * 1024)
+            .denyCacheImageMultipleSizesInMemory()//
+            .memoryCache(new LruMemoryCache(2 * 1024 * 1024))//
+            .memoryCacheSize(2 * 1024 * 1024)
             .memoryCacheSizePercentage(30) // default
-//			.diskCache(new UnlimitedDiscCache(cacheDir)) // default
-            .diskCacheSize(200 * 1024 * 1024).diskCacheFileCount(100).diskCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
+            .diskCache(new UnlimitedDiskCache(cacheDir)) // default
+            .diskCacheSize(200 * 1024 * 1024)//
+            .diskCacheFileCount(100)//
+            .diskCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
             .imageDownloader(new RefererImageDownloader(UIUtils.getContext())) // default
             .imageDecoder(new BaseImageDecoder(true)) // default
                     // .defaultDisplayImageOptions(DisplayImageOptions.createSimple())
@@ -71,6 +89,7 @@ public class ImageLoaderUtils {
         }
 
         BaseImageDownloader downloader = new BaseImageDownloader(UIUtils.getContext());
+
 
         return mImageLoader;
     }
