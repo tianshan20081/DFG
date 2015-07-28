@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/lyVerticalStyle">
+<LinearLayout
+    style="@style/lyVerticalStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ScrollView style="@style/scrollViewStyle">
 
@@ -8,17 +9,28 @@
 
             <LinearLayout style="@style/lyHorizontalStyle">
 
-                <Button android:id="@+id/btnTableLayout" style="@style/btnStyle"
-                    android:text="TableLayout" />
+                <Button
+                    android:id="@+id/btnTableLayout"
+                    style="@style/btnStyle"
+                    android:text="TableLayout"/>
 
-                <Button android:id="@+id/btnProgressView" style="@style/btnStyle"
-                    android:text="ProgressDialog" />
+                <Button
+                    android:id="@+id/btnProgressView"
+                    style="@style/btnStyle"
+                    android:text="ProgressDialog"/>
             </LinearLayout>
 
             <LinearLayout style="@style/lyHorizontalStyle">
 
-                <Button android:id="@+id/btnNumProgressBar" style="@style/btnItem"
-                    android:text="NumProgressBar" />
+                <Button
+                    android:id="@+id/btnNumProgressBar"
+                    style="@style/btnItem"
+                    android:text="NumProgressBar"/>
+
+                <Button
+                    android:id="@+id/btnScView"
+                    style="@style/btnItem"
+                    android:text="ScrollView"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

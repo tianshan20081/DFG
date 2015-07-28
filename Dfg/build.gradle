@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "23.0.0 rc2"
+    buildToolsVersion "23.0.0 rc3"
 
     defaultConfig {
         applicationId "com.gooker.dfg"
@@ -35,17 +35,18 @@ android {
 dependencies {
     //    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.0'
-    compile files('libs/jpush-sdk-release1.7.4.jar')
+    compile files('libs/jpush-sdk-release1.7.5.jar')
     compile files('libs/RyFitBluetoothLibrary_1.1.jar')
+    //    compile 'com.qiniu:qiniu-android-sdk:7.0.+'
     compile 'com.qiniu:qiniu-android-sdk:7.0.+'
     compile 'com.mcxiaoke.volley:library:1.0.16'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
     compile 'com.alibaba:fastjson:1.2.6'
     compile 'commons-codec:commons-codec:1.10'
-    compile 'com.facebook.fresco:fresco:0.5.2+'
     //    compile files('libs/nineoldandroids-2.4.0.jar')
     compile files('libs/locSDK_2.6.jar')
     compile files('libs/achartengine-1.1.0.jar')
     compile files('libs/JsonObjectTest_fat.jar')
     compile files('libs/phonegap.jar')
+    compile 'com.facebook.fresco:fresco:0.5.3'
 }

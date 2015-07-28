@@ -29,6 +29,8 @@ public class SimpleWebViewUI extends Activity {
         WebSettings settings = wvSimple.getSettings();
         // 添加对 JavaScript 的支持
         settings.setJavaScriptEnabled(true);
+//        settings.
+//        wvSimple.
         // 添加 放大缩小控件
         settings.setBuiltInZoomControls(true);
         settings.setSupportZoom(true);

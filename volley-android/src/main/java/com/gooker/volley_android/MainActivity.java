@@ -2,6 +2,8 @@ package com.gooker.volley_android;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,10 +25,19 @@ public class MainActivity extends Activity {
 
     private String TAG = "MainActivity";
 
+    private Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        handler.postDelayed();
 //        String url = "http://7xisea.com1.z0.glb.clouddn.com/hosts-20150427.txt";
         String url = "http://www.baidu.com";
 
@@ -63,6 +74,9 @@ public class MainActivity extends Activity {
 
 //        httpUtils.
 //        HttpUtils
+
+
+
 
     }
 

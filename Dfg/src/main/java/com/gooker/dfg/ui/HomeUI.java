@@ -145,6 +145,7 @@ public class HomeUI extends BaseUI implements OnClickListener {
                 intent = new Intent(HomeUI.this, ShellHomeUI.class);
                 break;
             case R.id.btnAnim:
+                intent = new Intent(HomeUI.this, AnimatorsUI.class);
                 break;
         }
         startActivity(intent);

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/lyVerticalStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView style="@style/scrollViewStyle">
+
+        <LinearLayout style="@style/lyVerticalStyle">
+
+            <LinearLayout style="@style/lyHorizontalStyle">
+
+                <Button
+                    android:id="@+id/btnScTv"
+                    style="@style/btnStyle"
+                    android:text="TextInfo"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

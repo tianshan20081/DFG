@@ -37,6 +37,9 @@ public class ViewsUI extends BaseUI {
             case R.id.btnNumProgressBar:
                 UIUtils.startActivity(NumProgressBarUI.class);
                 break;
+            case R.id.btnScView:
+                UIUtils.startActivity(ScrollViewHomeUI.class);
+                break;
             default:
                 break;
         }
@@ -83,6 +86,7 @@ public class ViewsUI extends BaseUI {
         findView(R.id.btnTableLayout).setOnClickListener(this);
         findView(R.id.btnProgressView).setOnClickListener(this);
         findView(R.id.btnNumProgressBar).setOnClickListener(this);
+        findView(R.id.btnScView).setOnClickListener(this);
     }
 
     /*

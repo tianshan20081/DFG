@@ -1,15 +1,15 @@
 package com.gooker.dfg.contentprovider;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 
 public class RegionContentProvider extends ContentProvider {
     private static final String AUTHORITY = "com.aoeng.degu.permission.regionContentprovider";
@@ -109,25 +109,21 @@ public class RegionContentProvider extends ContentProvider {
 
     @Override
     public String getType(Uri uri) {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
-        // TODO Auto-generated method stub
         return 0;
     }
 

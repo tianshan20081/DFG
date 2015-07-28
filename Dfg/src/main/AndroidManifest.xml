@@ -481,6 +481,19 @@
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <activity
+            android:name=".ui.views.ScrollViewHomeUI"
+            android:label="@string/title_activity_scroll_view_home_ui" >
+        </activity>
+        <activity
+            android:name=".ui.views.ScTvUI"
+            android:label="@string/title_activity_sc_tv_ui" >
+        </activity>
+        <activity
+            android:name=".ui.AnimatorsUI"
+            android:label="@string/title_activity_animators_ui" >
+        </activity>
     </application>
 
 </manifest>

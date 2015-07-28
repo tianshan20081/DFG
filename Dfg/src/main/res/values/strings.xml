@@ -160,7 +160,11 @@
     <string name="str_reset_timezone">恢复当前时区</string>
     <string name="title_activity_album_ui">AlbumUI</string>
     <string name="title_activity_album_fresco_ui">AlbumFrescoUI</string>
+    <string name="title_activity_scroll_view_home_ui">ScrollViewHomeUI</string>
+    <string name="title_activity_sc_tv_ui">ScTvUI</string>
 
 
 
+    <string name="sctvinfo">View.draw(Canvas canvas)： 由于 ViewGroup 并没有复写此方法，因此，所有的视图最终都是调用 View 的 draw 方法进行绘制的。在自定义的视图中，也不应该复写该方法，而是复写 onDraw(Canvas) 方法进行绘制，如果自定义的视图确实要复写该方法，那么请先调用 super.draw(canvas)完成系统的绘制，然后再进行自定义的绘制</string>
+    <string name="title_activity_animators_ui">AnimatorsUI</string>
 </resources>

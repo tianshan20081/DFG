@@ -13,6 +13,8 @@ import android.view.View;
 
 import com.gooker.recycleview.adapter.RvAdapter;
 
+import org.apache.http.conn.scheme.Scheme;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +27,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         rv = (RecyclerView) findViewById(R.id.rv);
