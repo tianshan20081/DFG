@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DFG.iml" filepath="$PROJECT_DIR$/DFG.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DFG.iml" filepath="$PROJECT_DIR$/DFG.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dfg/Dfg.iml" filepath="$PROJECT_DIR$/Dfg/Dfg.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jdui/Jdui.iml" filepath="$PROJECT_DIR$/Jdui/Jdui.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidlclient/aidlclient.iml" filepath="$PROJECT_DIR$/aidlclient/aidlclient.iml" />
@@ -11,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/frame/frame.iml" filepath="$PROJECT_DIR$/frame/frame.iml" />
       <module fileurl="file://$PROJECT_DIR$/hacks/hacks.iml" filepath="$PROJECT_DIR$/hacks/hacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/recycleview/recycleview.iml" filepath="$PROJECT_DIR$/recycleview/recycleview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/svg/svg.iml" filepath="$PROJECT_DIR$/svg/svg.iml" />
       <module fileurl="file://$PROJECT_DIR$/views/views.iml" filepath="$PROJECT_DIR$/views/views.iml" />
       <module fileurl="file://$PROJECT_DIR$/volley-android/volley-android.iml" filepath="$PROJECT_DIR$/volley-android/volley-android.iml" />

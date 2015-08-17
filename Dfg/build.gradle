@@ -3,10 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.0 rc3"
-
     defaultConfig {
         applicationId "com.gooker.dfg"
-        minSdkVersion 19
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -29,7 +28,8 @@ android {
     lintOptions {
         abortOnError false
     }
-
+    productFlavors {
+    }
 }
 
 dependencies {

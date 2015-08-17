@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        handler.postDelayed();
+//        handler.postDelayed();
 //        String url = "http://7xisea.com1.z0.glb.clouddn.com/hosts-20150427.txt";
         String url = "http://www.baidu.com";
 

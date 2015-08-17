@@ -340,9 +340,9 @@
         <activity android:name=".ui.handler.ThreadHandlerUI" />
         <activity android:name=".ui.handler.ReferenceHandlerUI" />
 
-        <service
-            android:name="com.chronocloud.ryfibluetoothlibrary.service.BluetoothService"
-            android:enabled="true" />
+        <!--<service-->
+            <!--android:name="com.chronocloud.ryfibluetoothlibrary.service.BluetoothService"-->
+            <!--android:enabled="true" />-->
         <!-- shell Command -->
         <activity android:name=".ui.shell.ShellHomeUI" />
 

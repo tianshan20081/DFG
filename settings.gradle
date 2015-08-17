@@ -1,2 +1,2 @@
-include ':Dfg', ':hacks', ':svg', ':aidlserver', ':aidlclient', ':aidlclient', ':recycleview', ':volley-android', ':websocket', ':views', ':frame'
+include ':Dfg', ':hacks', ':svg', ':aidlserver', ':aidlclient', ':aidlclient', ':recycleview', ':volley-android', ':websocket', ':views', ':frame', ':retrofit'
 include 'Jdui'
